@@ -12,7 +12,7 @@ import { PerpsEngine } from "@zaros/perpetuals/PerpsEngine.sol";
 import { Branch } from "@zaros/tree-proxy/leaves/Branch.sol";
 
 // Open Zeppelin dependencies
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract TestContract {
     function testFunction() public pure returns (string memory) {

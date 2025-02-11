@@ -6,7 +6,7 @@ import { Base_Test } from "test/Base.t.sol";
 import { MarginCollateralConfiguration } from "@zaros/perpetuals/leaves/MarginCollateralConfiguration.sol";
 
 // OpenZeppelin Upgradeable dependencies
-import { ERC20 } from "@openzeppelin/token/ERC20/ERC20.sol";
+import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract GetMarginCollateralConfiguration_Integration_Test is Base_Test {
     function setUp() public override {

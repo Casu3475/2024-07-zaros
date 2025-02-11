@@ -11,8 +11,8 @@ import { Position } from "@zaros/perpetuals/leaves/Position.sol";
 import { MarketOrder } from "@zaros/perpetuals/leaves/MarketOrder.sol";
 
 // Open Zeppelin dependencies
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18, ZERO as UD60x18_ZERO } from "@prb-math/UD60x18.sol";
@@ -146,6 +146,18 @@ contract LiquidationBranch {
             if (!TradingAccount.isLiquidatable(requiredMaintenanceMarginUsdX18, ctx.marginBalanceUsdX18)) {
                 continue;
             }
+
+            // @audit-high - Verify if the account has positive PnL, if so, mint it to the account before proceeding to deduct margin from the account as seen in `SettlementBranch._fillOrder`
+            // if (accountTotalUnrealizedPnlUsdX18.gt(SD59x18_ZERO)) {
+                // fetch storage slot for global config
+                // GlobalConfiguration.Data storage globalConfiguration = GlobalConfiguration.load();
+                // address usdzToken = globalConfiguration.usdToken;
+
+                // uint256 marginToAddX18 = accountTotalUnrealizedPnlUsdX18.intoUD60x18();
+                // tradingAccount.deposit(usdzToken, marginToAddX18);
+
+                // LimitedMintingERC20(usdzToken).mint(address(this), marginToAddX18.intoUint256());
+            // }
 
             // deduct maintenance margin from the account's collateral
             // settlementFee = liquidationFee

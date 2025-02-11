@@ -11,7 +11,7 @@ import { Errors } from "@zaros/utils/Errors.sol";
 import { MarketOrder } from "@zaros/perpetuals/leaves/MarketOrder.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 contract MarketOrderKeeper is ILogAutomation, IStreamsLookupCompatible, BaseKeeper {
     using SafeCast for uint256;

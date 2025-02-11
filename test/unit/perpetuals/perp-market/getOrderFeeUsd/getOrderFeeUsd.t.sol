@@ -9,7 +9,7 @@ import { UD60x18, ud60x18 } from "@prb-math/UD60x18.sol";
 import { SD59x18, sd59x18, unary } from "@prb-math/SD59x18.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 contract PerpMarket_GetOrderFeeUsd_Unit_Test is Base_Test {
     using SafeCast for int256;

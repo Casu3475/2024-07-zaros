@@ -11,7 +11,7 @@ import { IVerifierProxy } from "@zaros/external/chainlink/interfaces/IVerifierPr
 import { IOffchainAggregator } from "@zaros/external/chainlink/interfaces/IOffchainAggregator.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18 } from "@prb-math/UD60x18.sol";

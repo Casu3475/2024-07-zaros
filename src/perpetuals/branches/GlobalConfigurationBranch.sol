@@ -13,10 +13,10 @@ import { OrderFees } from "@zaros/perpetuals/leaves/OrderFees.sol";
 import { CustomReferralConfiguration } from "@zaros/perpetuals/leaves/CustomReferralConfiguration.sol";
 
 // OpenZeppelin Upgradeable dependencies
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
-import { ERC20 } from "@openzeppelin/token/ERC20/ERC20.sol";
-import { Initializable } from "@openzeppelin-upgradeable/proxy/utils/Initializable.sol";
-import { OwnableUpgradeable } from "@openzeppelin-upgradeable/access/OwnableUpgradeable.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import { Initializable } from "@openzeppelin-upgradeable/contracts/proxy/utils/Initializable.sol";
+import { OwnableUpgradeable } from "@openzeppelin-upgradeable/contracts/access/OwnableUpgradeable.sol";
 
 /// @title Global Configuration Branch.
 /// @notice This  is used by the protocol controller to configure the perps

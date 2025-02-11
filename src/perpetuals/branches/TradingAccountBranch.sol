@@ -13,10 +13,10 @@ import { CustomReferralConfiguration } from "@zaros/perpetuals/leaves/CustomRefe
 import { Referral } from "@zaros/perpetuals/leaves/Referral.sol";
 
 // Open Zeppelin dependencies
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
-import { IERC20 } from "@openzeppelin/token/ERC20/ERC20.sol";
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
-import { SafeERC20 } from "@openzeppelin/token/ERC20/utils/SafeERC20.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
+import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18, ZERO as UD60x18_ZERO } from "@prb-math/UD60x18.sol";

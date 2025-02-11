@@ -9,7 +9,7 @@ import { Position } from "@zaros/perpetuals/leaves/Position.sol";
 import { SD59x18, sd59x18 } from "@prb-math/SD59x18.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 contract Position_GetAccruedFunding_Unit_Test is Base_Test {
     using SafeCast for int256;

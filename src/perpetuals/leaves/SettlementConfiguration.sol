@@ -10,7 +10,7 @@ import { Errors } from "@zaros/utils/Errors.sol";
 import { ChainlinkUtil } from "@zaros/external/chainlink/ChainlinkUtil.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18 } from "@prb-math/UD60x18.sol";

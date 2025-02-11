@@ -5,8 +5,8 @@ pragma solidity 0.8.25;
 import { Errors } from "@zaros/utils/Errors.sol";
 
 // Open Zeppelin dependencies
-import { OwnableUpgradeable } from "@openzeppelin-upgradeable/access/OwnableUpgradeable.sol";
-import { UUPSUpgradeable } from "@openzeppelin-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import { OwnableUpgradeable } from "@openzeppelin-upgradeable/contracts/access/OwnableUpgradeable.sol";
+import { UUPSUpgradeable } from "@openzeppelin-upgradeable/contracts/proxy/utils/UUPSUpgradeable.sol";
 
 abstract contract BaseKeeper is UUPSUpgradeable, OwnableUpgradeable {
     /// @notice ERC7201 storage location.

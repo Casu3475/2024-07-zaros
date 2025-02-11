@@ -11,7 +11,7 @@ import { Branch } from "@zaros/tree-proxy/leaves/Branch.sol";
 import { LookupBranch } from "@zaros/tree-proxy/branches/LookupBranch.sol";
 
 // Open Zeppelin dependencies
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract TestContract is RootProxy {
     constructor(InitParams memory initParams) RootProxy(initParams) { }

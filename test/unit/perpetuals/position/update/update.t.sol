@@ -6,7 +6,7 @@ import { Base_Test } from "test/Base.t.sol";
 import { Position } from "@zaros/perpetuals/leaves/Position.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 contract Position_Update_Unit_Test is Base_Test {
     using SafeCast for int256;

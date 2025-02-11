@@ -6,8 +6,8 @@ pragma solidity 0.8.25;
 import { Errors } from "@zaros/utils/Errors.sol";
 
 // Open Zeppelin dependencies
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
-import { ERC20, ERC20Permit } from "@openzeppelin/token/ERC20/extensions/ERC20Permit.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
+import { ERC20, ERC20Permit } from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
 contract USDToken is ERC20Permit, Ownable {
     constructor(address owner) ERC20("Zaros USD", "USDz") ERC20Permit("Zaros USD") Ownable(owner) { }

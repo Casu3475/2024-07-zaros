@@ -7,7 +7,7 @@ import { Base_Test } from "test/Base.t.sol";
 import { LiquidationKeeper } from "@zaros/external/chainlink/keepers/liquidation/LiquidationKeeper.sol";
 
 // Open Zeppelin dependencies
-import { ERC1967Proxy } from "@openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
+import { ERC1967Proxy } from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
 contract LiquidationKeeper_Initialize_Integration_Test is Base_Test {
     function setUp() public override {

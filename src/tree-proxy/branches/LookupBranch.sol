@@ -6,8 +6,8 @@ import { RootUpgrade } from "../leaves/RootUpgrade.sol";
 import { LookupTable } from "../leaves/LookupTable.sol";
 import { Branch } from "../leaves/Branch.sol";
 
-// Open Zeppelin dependencies
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
+// Open Zeppelin dependenciesssssss
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 
 contract LookupBranch {
     using RootUpgrade for RootUpgrade.Data;

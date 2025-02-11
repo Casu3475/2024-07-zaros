@@ -7,7 +7,7 @@ import { Base_Test } from "test/Base.t.sol";
 import { USDToken } from "@zaros/usd/USDToken.sol";
 
 // Open Zeppelin dependencies
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract USDToken_Mint_Test is Base_Test {
     USDToken token;

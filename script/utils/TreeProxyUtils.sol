@@ -24,7 +24,7 @@ import { SettlementConfigurationHarness } from "test/harnesses/perpetuals/leaves
 import { TradingAccountHarness } from "test/harnesses/perpetuals/leaves/TradingAccountHarness.sol";
 
 // Open Zeppelin Upgradeable dependencies
-import { EIP712Upgradeable } from "@openzeppelin-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
+import { EIP712Upgradeable } from "@openzeppelin-upgradeable/contracts/utils/cryptography/EIP712Upgradeable.sol";
 
 // Forge dependencies
 import { console } from "forge-std/console.sol";

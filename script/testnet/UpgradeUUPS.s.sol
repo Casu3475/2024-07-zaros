@@ -8,8 +8,8 @@ import { LimitedMintingERC20 } from "testnet/LimitedMintingERC20.sol";
 import { BaseScript } from "../Base.s.sol";
 
 // Open Zeppelin dependencies
-import { ERC1967Proxy } from "@openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
-import { UUPSUpgradeable } from "@openzeppelin/proxy/utils/UUPSUpgradeable.sol";
+import { ERC1967Proxy } from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
+import { UUPSUpgradeable } from "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol";
 
 // Forge dependencies
 import { console } from "forge-std/console.sol";

@@ -13,7 +13,7 @@ import { SettlementConfiguration } from "@zaros/perpetuals/leaves/SettlementConf
 import { GlobalConfiguration } from "@zaros/perpetuals/leaves/GlobalConfiguration.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18, convert as ud60x18Convert } from "@prb-math/UD60x18.sol";

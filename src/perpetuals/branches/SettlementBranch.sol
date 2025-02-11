@@ -16,12 +16,12 @@ import { SettlementConfiguration } from "@zaros/perpetuals/leaves/SettlementConf
 
 // Open Zeppelin dependencies
 import { ECDSA } from "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
-import { SafeERC20, IERC20 } from "@openzeppelin/token/ERC20/utils/SafeERC20.sol";
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import { SafeERC20, IERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 // Open Zeppelin Upgradeable dependencies
-import { EIP712Upgradeable } from "@openzeppelin-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
+import { EIP712Upgradeable } from "@openzeppelin-upgradeable/contracts/utils/cryptography/EIP712Upgradeable.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18, ZERO as UD60x18_ZERO } from "@prb-math/UD60x18.sol";
@@ -432,6 +432,7 @@ contract SettlementBranch is EIP712Upgradeable {
             // reverts if the trader can't satisfy the appropriate margin requirement
             tradingAccount.validateMarginRequirement(
                 ctx.requiredMarginUsdX18,
+                // @audit-high - Drain the potocol fully !
                 tradingAccount.getMarginBalanceUsd(accountTotalUnrealizedPnlUsdX18),
                 ctx.orderFeeUsdX18.add(ctx.settlementFeeUsdX18)
             );

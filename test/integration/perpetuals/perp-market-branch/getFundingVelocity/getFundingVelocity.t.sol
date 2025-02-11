@@ -13,7 +13,7 @@ import { ud60x18 } from "@prb-math/UD60x18.sol";
 import { SD59x18, sd59x18, UNIT as SD_UNIT, unary } from "@prb-math/SD59x18.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 contract GetFundingVelocity_Integration_Test is Base_Test {
     using SafeCast for uint256;

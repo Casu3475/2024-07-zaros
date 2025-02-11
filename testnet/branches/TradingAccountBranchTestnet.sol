@@ -9,9 +9,9 @@ import { CustomReferralConfigurationTestnet } from "../leaves/CustomReferralConf
 import { ReferralTestnet } from "../leaves/ReferralTestnet.sol";
 
 // Open Zeppelin dependencies
-import { IERC20 } from "@openzeppelin/token/ERC20/ERC20.sol";
-import { Initializable } from "@openzeppelin-upgradeable/proxy/utils/Initializable.sol";
-import { OwnableUpgradeable } from "@openzeppelin-upgradeable/access/OwnableUpgradeable.sol";
+import { IERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import { Initializable } from "@openzeppelin-upgradeable/contracts/proxy/utils/Initializable.sol";
+import { OwnableUpgradeable } from "@openzeppelin-upgradeable/contracts/access/OwnableUpgradeable.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18 } from "@prb-math/UD60x18.sol";

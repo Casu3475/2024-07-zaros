@@ -5,8 +5,8 @@ pragma solidity 0.8.25;
 import { Errors } from "@zaros/utils/Errors.sol";
 
 // Open Zeppelin dependencies
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 /// @title The GlobalConfiguration namespace.
 library GlobalConfiguration {

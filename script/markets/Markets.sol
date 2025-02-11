@@ -11,7 +11,7 @@ import { IVerifierProxy } from "@zaros/external/chainlink/interfaces/IVerifierPr
 import { GlobalConfigurationBranch } from "@zaros/perpetuals/branches/GlobalConfigurationBranch.sol";
 
 // Open Zeppelin dependencies
-import { ERC1967Proxy } from "@openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
+import { ERC1967Proxy } from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
 // Forge dependencies
 import { StdCheats, StdUtils } from "forge-std/Test.sol";

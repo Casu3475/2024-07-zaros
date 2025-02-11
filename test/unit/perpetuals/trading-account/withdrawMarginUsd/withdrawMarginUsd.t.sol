@@ -1,9 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.8.25;
 
-// Zaros dependencies
-import { Base_Test } from "test/Base.t.sol";
-import { MockERC20 } from "test/mocks/MockERC20.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18, convert as ud60x18Convert } from "@prb-math/UD60x18.sol";

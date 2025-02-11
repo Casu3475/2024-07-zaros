@@ -8,7 +8,7 @@ import { Base_Test } from "test/Base.t.sol";
 import { Position } from "@zaros/perpetuals/leaves/Position.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 // PRB Math dependencies
 import { UD60x18, ud60x18 } from "@prb-math/UD60x18.sol";

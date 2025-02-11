@@ -8,7 +8,7 @@ import { IPerpsEngine } from "@zaros/perpetuals/PerpsEngine.sol";
 import { MarketOrderKeeper } from "@zaros/external/chainlink/keepers/market-order/MarketOrderKeeper.sol";
 
 // Open Zeppelin dependencies
-import { ERC1967Proxy } from "@openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
+import { ERC1967Proxy } from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
 contract MarketOrderKeeper_Initialize_Integration_Test is Base_Test {
     function setUp() public override {

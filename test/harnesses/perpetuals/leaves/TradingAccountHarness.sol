@@ -6,8 +6,8 @@ import { TradingAccount } from "@zaros/perpetuals/leaves/TradingAccount.sol";
 import { FeeRecipients } from "@zaros/perpetuals/leaves/FeeRecipients.sol";
 
 // Open Zeppelin dependencies
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
-import { EnumerableMap } from "@openzeppelin/utils/structs/EnumerableMap.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import { EnumerableMap } from "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
 
 // PRB Math dependencies
 import { UD60x18 } from "@prb-math/UD60x18.sol";

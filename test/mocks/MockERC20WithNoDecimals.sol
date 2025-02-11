@@ -6,7 +6,7 @@ pragma solidity 0.8.25;
 import { MockERC20 } from "./MockERC20.sol";
 
 // Open Zeppelin dependencies
-import { ERC20 } from "@openzeppelin/token/ERC20/ERC20.sol";
+import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract MockERC20WithNoDecimals is ERC20 {
     uint8 internal _decimals;

@@ -9,7 +9,7 @@ import { SettlementConfiguration } from "@zaros/perpetuals/leaves/SettlementConf
 import { IVerifierProxy } from "@zaros/external/chainlink/interfaces/IVerifierProxy.sol";
 
 // Open Zeppelin dependencies
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract UpdateSettlementConfiguration_Integration_Test is Base_Test {
     function setUp() public override {

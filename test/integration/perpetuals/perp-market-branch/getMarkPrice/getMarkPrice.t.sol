@@ -13,7 +13,7 @@ import { UD60x18, ud60x18, convert as ud60x18Convert } from "@prb-math/UD60x18.s
 import { SD59x18, sd59x18, ZERO as SD59x18_ZERO } from "@prb-math/SD59x18.sol";
 
 // Open Zeppelin dependencies
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 contract GetMarkPrice_Integration_Test is Base_Test {
     using SafeCast for uint256;

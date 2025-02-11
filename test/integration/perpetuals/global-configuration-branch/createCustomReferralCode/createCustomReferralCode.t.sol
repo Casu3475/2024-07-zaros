@@ -6,7 +6,7 @@ import { Base_Test } from "test/Base.t.sol";
 import { GlobalConfigurationBranch } from "@zaros/perpetuals/branches/GlobalConfigurationBranch.sol";
 
 // Open Zeppelin dependencies
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract CreateCustomReferralCode_Integration_Test is Base_Test {
     function setUp() public override {

@@ -8,7 +8,7 @@ import { LiquidationKeeper } from "@zaros/external/chainlink/keepers/liquidation
 import { ChainlinkAutomationUtils } from "script/utils/ChainlinkAutomationUtils.sol";
 
 // Open Zeppelin dependencies
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract LiquidationKeeper_SetConfig_Integration_Test is Base_Test {
     function setUp() public override {

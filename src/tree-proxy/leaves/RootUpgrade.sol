@@ -8,8 +8,8 @@ import { RootUpgrade } from "@zaros/tree-proxy/leaves/RootUpgrade.sol";
 import { Branch } from "@zaros/tree-proxy/leaves/Branch.sol";
 
 // Open Zeppelin dependencies
-import { Address } from "@openzeppelin/utils/Address.sol";
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
+import { Address } from "@openzeppelin/contracts/utils/Address.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 
 library RootUpgrade {
     using EnumerableSet for *;

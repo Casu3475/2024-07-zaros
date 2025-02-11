@@ -5,7 +5,7 @@ pragma solidity 0.8.25;
 import { GlobalConfiguration } from "@zaros/perpetuals/leaves/GlobalConfiguration.sol";
 
 // Open Zeppelin dependencies
-import { EnumerableSet } from "@openzeppelin/utils/structs/EnumerableSet.sol";
+import { EnumerableSet } from "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
 
 contract GlobalConfigurationHarness {
     using EnumerableSet for EnumerableSet.UintSet;

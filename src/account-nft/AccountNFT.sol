@@ -6,9 +6,9 @@ pragma solidity 0.8.25;
 import { IPerpsEngine } from "@zaros/perpetuals/PerpsEngine.sol";
 
 // Open Zeppelin dependencies
-import { ERC721, ERC721Enumerable } from "@openzeppelin/token/ERC721/extensions/ERC721Enumerable.sol";
-import { Ownable } from "@openzeppelin/access/Ownable.sol";
-import { SafeCast } from "@openzeppelin/utils/math/SafeCast.sol";
+import { ERC721, ERC721Enumerable } from "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
+import { SafeCast } from "@openzeppelin/contracts/utils/math/SafeCast.sol";
 
 contract AccountNFT is ERC721Enumerable, Ownable {
     using SafeCast for uint256;

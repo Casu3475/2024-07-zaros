@@ -11,7 +11,7 @@ import { BaseScript } from "./Base.s.sol";
 import { ProtocolConfiguration } from "./utils/ProtocolConfiguration.sol";
 
 // Open Zeppelin dependencies
-import { ERC1967Proxy } from "@openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
+import { ERC1967Proxy } from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
 // Forge dependencies
 import { console } from "forge-std/console.sol";

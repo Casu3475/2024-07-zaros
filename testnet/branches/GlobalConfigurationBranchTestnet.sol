@@ -9,8 +9,8 @@ import { Points } from "../leaves/Points.sol";
 import { LimitedMintingERC20 } from "testnet/LimitedMintingERC20.sol";
 
 // Open Zeppelin dependencies
-import { ERC1967Proxy } from "@openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
-import { UUPSUpgradeable } from "@openzeppelin/proxy/utils/UUPSUpgradeable.sol";
+import { ERC1967Proxy } from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
+import { UUPSUpgradeable } from "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol";
 
 contract GlobalConfigurationBranchTestnet is GlobalConfigurationBranch {
     function setUserPoints(address user, uint256 value) external onlyOwner {

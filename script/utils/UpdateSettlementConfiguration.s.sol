@@ -10,8 +10,8 @@ import { BaseScript } from "script/Base.s.sol";
 import { ProtocolConfiguration } from "script/utils/ProtocolConfiguration.sol";
 
 // Open Zeppelin dependencies
-import { ERC1967Proxy } from "@openzeppelin/proxy/ERC1967/ERC1967Proxy.sol";
-import { UUPSUpgradeable } from "@openzeppelin/proxy/utils/UUPSUpgradeable.sol";
+import { ERC1967Proxy } from "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
+import { UUPSUpgradeable } from "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol";
 
 // Forge dependencies
 import { console } from "forge-std/console.sol";
